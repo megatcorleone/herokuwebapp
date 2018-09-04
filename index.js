@@ -81,9 +81,9 @@ const pool = new Pool({
 
           if(weather.main == undefined){
             console.log(123)
-            res.render('pages/index', {weather: null, error: 'Error, please try again'});
+            res.render('pages/index', {weather: null, error: 'Error, please enter correct city name'});
           } else {
-            console.log(31)
+            console.log(200 + "  Success!")
             let weatherText = `It's ${weather.main.temp} degrees in ${weather.name}!`;
             res.render('pages/index', {weather: weatherText, error: null});
           }

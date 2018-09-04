@@ -28,16 +28,16 @@
   <fieldset>
     <form action="/" method="post">
       <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-12"><input type="submit" class="ghost-button" value="Get Weather"></div>
+      <div class="col-12"><input type="submit" class="ghost-button" value="Get Weather"></div>
     </form>
 
 
     <% if(weather !== null){ %>
-      <p><%= weather %></p>
+      <div class="alert alert-success"><%= weather %></div>
     <% } %>
 
     <% if(error !== null){ %>
-      <p><%= error %></p>
+      <div class="alert alert-danger"><%= error %></div>
     <% } %>
   </fieldset>
 </div>
