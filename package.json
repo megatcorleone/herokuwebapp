@@ -1,12 +1,13 @@
 {
   "name": "node-js-getting-started",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Lorem Ipsum",
   "engines": {
     "node": "8.9.1"
   },
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate",
     "start": "node index.js",
     "test": "node test.js"
   },
